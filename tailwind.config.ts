@@ -7,23 +7,16 @@ const config = {
       colors: {
         // background-colors
         primary: "#1A1A1A",
-        secondary: "#484848",
-        tertiary: "#989898",
-        quaternary: "#BABABA",
-        quinary: "#757575",
-        senary: "#212121",
-        septenary: "#F3F8FF",
-        octonary: "#212121",
-        nonary: "#e0e0e0",
+        secondary: "#252525",
+        tertiary: "#404040",
+        quaternary: "#484848",
+        quinary: "#989898",
+        senary: "#757575",
+        septenary: "#BABABA",
+        octonary: "#FFFFFF",
+        nonary: "#212121",
         denaray: "#f0fff4",
 
-        // text-colors
-        textPrimary: "#ffffff",
-        textSecondary: "#BABABA",
-        textTertiary: "#7b7f82",
-        textQuanternary: "#bdbdbd",
-        textQuinary: "#004340",
-        textNonary: "#e0e0e0",
         // util-colors
         progress: "#3580DE",
         modalShade: "#050505",

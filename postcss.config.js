@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 module.exports = {
   plugins: {
-    tailwindcss: { config: "./tailwind.config.js" },
+    tailwindcss: { config: "./tailwind.config.ts" },
     autoprefixer: {},
   },
 };

@@ -3,7 +3,8 @@ import AppDrawer from "../components/AppDrawer";
 
 const App = () => {
   return (
-    <div>
+    <div className="bg-primary text-sm">
+      aspfa
       <AppDrawer />
     </div>
   );
