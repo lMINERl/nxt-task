@@ -1,3 +1,5 @@
+/* @config './tailwind.config.cts'; */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
