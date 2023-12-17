@@ -1,6 +1,7 @@
 /* eslint-disable prettier/prettier */
-/** @type {import('tailwindcss').Config} */
-const config = {
+
+import { Config } from "tailwindcss";
+const config: Config = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
@@ -14,6 +15,9 @@ const config = {
           300: "#989898",
           200: "#BABABA",
           50: "#FFFFFF",
+        },
+        primary: {
+          700: "#2D2D2D",
         },
 
         // util-colors
@@ -36,6 +40,7 @@ const config = {
         sm0: "1.6rem",
         md0: "2rem",
         md1: "2.4rem",
+        md2: "2.6rem",
         lg0: "3.4rem",
         lg1: "3.6rem",
       },
@@ -53,6 +58,9 @@ const config = {
         "7xl": ["7.2rem", { lineHeight: "1.6rem" }],
         "8xl": ["9.6rem", { lineHeight: "1.6rem" }],
         "9xl": ["8rem", { lineHeight: "1.6rem" }],
+      },
+      fontWeight: {
+        regular: 400,
       },
       borderRadius: {
         custom: "0.4 rem",

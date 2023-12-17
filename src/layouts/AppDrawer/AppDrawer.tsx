@@ -1,5 +1,6 @@
 import React, { PropsWithChildren } from "react";
 import SidebarItem from "../../components/SidebarItem";
+import { SidebarItemProps } from "../../components/SidebarItem/SidebarItem";
 
 const list = [
   { name: "Home", icon: "", path: "" },
@@ -48,6 +49,7 @@ const AppDrawer = (props: PropsWithChildren<AppDrawerProps>) => {
     },
     [],
   );
+
   const items = React.useMemo(() => {
     return (
       <>
@@ -60,7 +62,7 @@ const AppDrawer = (props: PropsWithChildren<AppDrawerProps>) => {
                 icon={v.icon as unknown as JSX.Element}
                 selected={v.name == openedItem}
                 onClick={onItemClick}
-                items={v.items as any}
+                items={v.items as SidebarItemProps[]}
               />
               {i != list.length - 1 && (
                 <div className="border-[1px] border-gray-700 mt-[5px] mb-[5px]" />
@@ -73,16 +75,15 @@ const AppDrawer = (props: PropsWithChildren<AppDrawerProps>) => {
   }, [openedItem, onItemClick]);
 
   return (
-    <div className="flex transition ease-in-out ">
+    <div className="flex transition ease-in-out items-stretch">
       <div
         className={`${
           !props.open ? "w-0" : "w-full"
-        } relative max-w-[20.8rem] bg-gray-700 overflow-hidden`}
-        style={{ height: "calc(100vh - 7.2rem)" }}
+        } relative max-w-[20.8rem] bg-gray-700 overflow-hidden min-h-[100vh]`}
       >
         <ul className="w-full pt-md0 px-sm0 pb-xs1">{items}</ul>
       </div>
-      <div className="bg-gray-1000">{props.children}</div>
+      <div className="w-full bg-gray-1000">{props.children}</div>
     </div>
   );
 };

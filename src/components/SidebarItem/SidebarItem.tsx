@@ -1,6 +1,6 @@
 import React from "react";
 
-interface SidebarItemProps {
+export interface SidebarItemProps {
   selected?: boolean;
   disabled?: boolean;
   name: string;
